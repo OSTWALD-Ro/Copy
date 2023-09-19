@@ -110,14 +110,6 @@ function if_browser_OSTWALD__index()
 
 /*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
 
-function if_exist_html_index__index()
-{
-  var_if_exist_html_index__index = true;
-  return var_if_exist_html_index__index;
-}
-
-/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
-
 function delete_html__index()
 {  
   /*
@@ -139,9 +131,9 @@ function delete_html__index()
 
 /*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
 
-document.addEventListener("DOMContentLoaded", function() 
+function init__index()
 {
-  // Código Despues de Cargar la Pagina Completa
+  //  Código Inicial  
+}
 
-  main__index();
-});
+init__index();
