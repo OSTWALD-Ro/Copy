@@ -33,6 +33,14 @@ function OSTWALD_elements_html_1__index(html_number__index)
 
 /*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
 
+function if_exist_html_index__index()
+{
+  var_if_exist_html_index__index = true;
+  return var_if_exist_html_index__index;
+}
+
+/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
+
 function if_exists_html__index(current_device__init, html_number__index)
 {
   switch (html_number__index)
