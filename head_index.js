@@ -26,7 +26,76 @@ var var_window_orientation__index;
 
 var var_if_browser_OSTWALD__index;
 
-// Funciones
+/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
+
+var testMode = false; // false Modo Normal | true Modo Prueba
+
+var currentURL = window.location.href;
+var mainURL = "https://ostwald-ro.github.io/Copy"; // Sesión
+var mainURLError = "https://ostwald-ro.github.io/Copy"; // Sesi%C3%B3n
+// var mainURLErrorHTML = "https://ostwald-ro.github.io/Copy/index.html"; // Sesi%C3%B3n.html
+
+var alternativeFunctions = true; // Funciones Alternativas | false true
+
+// Funciones 
+
+function end(_blank)
+{
+
+  if (
+      alternativeFunctions === true
+     )
+  {
+    if (
+        testMode !== true
+       )
+    {
+      window.location.href = mainURL;
+    } else
+    {
+      // window.location.href = currentURL;
+      location.reload(true);
+    }
+  } else 
+  {
+
+
+    // location.reload(true);
+
+    if (
+        _blank === true
+       )
+    {
+
+      if (
+          testMode !== true
+         )
+      {
+        window.open(mainURL, '_blank');
+      } else
+      {
+        window.open(currentURL, '_blank');
+      }
+
+    } else
+    {
+
+      if (
+          testMode !== true
+         )
+      {
+        window.open(mainURL);
+      } else
+      {
+        window.open(currentURL);
+      }
+
+    }
+    window.close();
+  }
+}
+
+/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
 
 function Pixels_Per_Inch(var_pixels__index)
 {
@@ -133,7 +202,22 @@ function delete_html__index()
 
 function init__index()
 {
-  //  Código Inicial  
+  //  Código Inicial
+    
+  if (
+      testMode === true
+     )
+  {
+    mainURLError = currentURL;
+    alternativeFunctions = false;
+  }
+      
+  if (
+      currentURL !== mainURLError
+     )
+  {
+    end();
+  }
 }
 
 init__index();
