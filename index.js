@@ -36,14 +36,6 @@ var var_if_exists_html_Ostwald_Ro_watch_1__index;
 
 // Funciones
 
-function if_exist_html_index__index()
-{
-  var_if_exist_html_index__index = true;
-  return var_if_exist_html_index__index;
-}
-
-/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
-
 function Pixels_Per_Inch(var_pixels__index)
 {
   console.log("Pixels_Per_Inch__index()");
@@ -143,14 +135,12 @@ function OSTWALD_elements_html_1__index(html_number__index)
   }
 }
 
-/* //////////////////////////////// */
+/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
 
-function redirigir__index(page_Id__index, subpage_Id__index, error__index) {
-  if (error__index === 0) {
-    window.location.href = "https://ostwald-ro.github.io/" + page_Id__index + "/" + subpage_Id__index;
-  } else {
-    window.location.href = "https://ostwald-ro.github.io/Error/" + error__index;
-  }
+function if_exist_html_index__index()
+{
+  var_if_exist_html_index__index = true;
+  return var_if_exist_html_index__index;
 }
 
 function delete_html__index()
@@ -519,6 +509,18 @@ function create_html__index__index(html_number__index)
     create_html__index(var_current_device__init, window_orientation__index(), html_number__index);
   }
 }
+
+/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
+
+function redirigir__index(page_Id__index, subpage_Id__index, error__index) {
+  if (error__index === 0) {
+    window.location.href = "https://ostwald-ro.github.io/" + page_Id__index + "/" + subpage_Id__index;
+  } else {
+    window.location.href = "https://ostwald-ro.github.io/Error/" + error__index;
+  }
+}
+
+/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
 
 function init__index()
 {
