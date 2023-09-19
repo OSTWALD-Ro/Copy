@@ -116,6 +116,8 @@ function if_browser_OSTWALD__index()
   return var_if_browser_OSTWALD__index;
 }
 
+/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
+
 function OSTWALD_elements_html_1__index(html_number__index)
 {
   // Si No es el Navegador OSTWALD, Crear Elementos para otra HTML
@@ -143,6 +145,8 @@ function if_exist_html_index__index()
   return var_if_exist_html_index__index;
 }
 
+/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
+
 function delete_html__index()
 {  
   /*
@@ -161,6 +165,8 @@ function delete_html__index()
     document.body.removeChild(document.body.firstChild);
   }
 }
+
+/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
 
 function if_exists_html__index(current_device__init, html_number__index)
 {
@@ -524,10 +530,7 @@ function redirigir__index(page_Id__index, subpage_Id__index, error__index) {
 
 function init__index()
 {
-  //  Código Inicial
-  if_exist_html_index__index();
-  
-  delete_html__index();
+  //  Código Inicial  
 }
 
 function main__index() 
@@ -554,6 +557,8 @@ function main__index()
         create_html_desktop_horizontal_1_init__index();
   */
 
+  delete_html__index();
+  
   create_html__index__index(1);
   create_html_init__index__index(1);
 }
