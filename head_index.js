@@ -31,8 +31,8 @@ var var_if_browser_OSTWALD__index;
 var testMode = false; // false Modo Normal | true Modo Prueba
 
 var currentURL = window.location.href;
-var mainURL = "https://ostwald-ro.github.io/Copy"; // Sesión
-var mainURLError = "https://ostwald-ro.github.io/Copy"; // Sesi%C3%B3n
+var mainURL = "https://ostwald-ro.github.io/Copy/"; // Sesión
+var mainURLError = "https://ostwald-ro.github.io/Copy/"; // Sesi%C3%B3n
 // var mainURLErrorHTML = "https://ostwald-ro.github.io/Copy/index.html"; // Sesi%C3%B3n.html
 
 var alternativeFunctions = true; // Funciones Alternativas | false true
