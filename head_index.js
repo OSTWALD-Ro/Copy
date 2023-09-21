@@ -248,6 +248,10 @@ function navigator_userAgent__init()
   } else {
     var_device__index = "Desconocido";
   }
+  if (/Ostwald/i.test(navigator_userAgent)) 
+  {
+    var_browser__index = "Ostwald Browser";
+  } else 
   if (/Edg/i.test(navigator_userAgent)) 
   {
     var_browser__index = "Microsoft Edge";
