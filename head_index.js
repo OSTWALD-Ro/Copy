@@ -297,9 +297,17 @@ function window_orientation__index()
 
 function if_browser_OSTWALD__index()
 {
-  // Comprobar si Ejecuta Desde el var_browser__index OSTWALD
+  // Comprobar si Ejecuta Desde var_browser__index OSTWALD
 
-  var_if_browser_OSTWALD__index = false;
+  navigator_userAgent__init();
+
+  if (var_browser__index === "Ostwald Browser")
+  {
+    var_if_browser_OSTWALD__index = true;
+  } else
+  {
+    var_if_browser_OSTWALD__index = false;
+  }
 
   return var_if_browser_OSTWALD__index;
 }
