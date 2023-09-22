@@ -1,1 +1,103 @@
+<html>
+  <head>
+  </head>
+  <body>
+<script>
+'use strict';
 
+// Variables
+
+var testMode = false; // false Modo Normal | true Modo Prueba
+
+var currentURL = window.location.href;
+var mainURL = "https://ostwald-ro.github.io/Sistema/Redirigir";
+var mainURLError = "https://ostwald-ro.github.io/Sistema/Redirigir";
+// var mainURLErrorHTML = "https://ostwald-ro.github.io/Sistema/Redirigir.html";
+
+var alternativeFunctions = true; // Funciones Alternativas | false true
+
+var fileName, segundosReintentando, s;
+var segundo = 1000;
+    
+// Funciones      
+
+function end(_blank)
+{
+
+  if (
+      alternativeFunctions === true
+     )
+  {
+    if (
+        testMode !== true
+       )
+    {
+      window.location.href = mainURL;
+    } else
+    {
+      // window.location.href = currentURL;
+      location.reload(true);
+    }
+  } else 
+  {
+
+
+    // location.reload(true);
+
+    if (
+        _blank === true
+       )
+    {
+
+      if (
+          testMode !== true
+         )
+      {
+        window.open(mainURL, '_blank');
+      } else
+      {
+        window.open(currentURL, '_blank');
+      }
+
+    } else
+    {
+
+      if (
+          testMode !== true
+         )
+      {
+        window.open(mainURL);
+      } else
+      {
+        window.open(currentURL);
+      }
+
+    }
+    window.close();
+  }
+}
+
+function init__index()
+{
+  //  Código Inicial
+    
+  if (
+      var_testMode__index === true
+     )
+  {
+    var_mainURLError__index  = var_currentURL__index;
+    var_alternativeFunctions__index  = false;
+  }
+      
+  if (
+      var_currentURL__index !== var_mainURLError__index 
+     )
+  {
+    end__index();
+  }
+}
+
+init__index();
+</script>
+  </body>
+</html>
