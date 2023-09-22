@@ -403,6 +403,16 @@ function redirigir__index(page_Id__index, subpage_Id__index, error__index) {
 
 function main__index() 
 {
+  // Código Despues de Cargar la Pagina Completa
+
+  window_orientation();
+
+  // Ejecutar la función cuando cambie el tamaño de la ventana
+  window.addEventListener("resize", function()
+  {
+    save_html__index__index(var_current_html__init)
+  });
+
   //  Código Principal
 
   /*  Identificar dispositivo
@@ -430,20 +440,3 @@ function main__index()
   create_html__index__index(1);
   create_html_init__index__index(1);
 }
-
-/*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
-
-document.addEventListener("DOMContentLoaded", function() 
-{
-  // Código Despues de Cargar la Pagina Completa
-
-  window_orientation();
-
-  // Ejecutar la función cuando cambie el tamaño de la ventana
-  window.addEventListener("resize", function()
-  {
-    save_html__index__index(var_current_html__init)
-  });
-
-  main__index();
-});
