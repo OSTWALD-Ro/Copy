@@ -3,38 +3,36 @@
 <head>
 </head>
 <body>
-<h1 id="h1"></h1>
 <script>
 'use strict';
 
 // Variables
 
-var testMode = false; // false Modo Normal | true Modo Prueba
+var var_testMode__index = false; // false Modo Normal | true Modo Prueba
 
-var currentURL = window.location.href;
-var mainURL = "https://ostwald-ro.github.io/Copy/Redirigir";
-var mainURLError = "https://ostwald-ro.github.io/Copy/Redirigir";
-// var mainURLErrorHTML = "https://ostwald-ro.github.io/Copy/Redirigir.html";
+var var_currentURL__index = window.location.href;
+var var_mainURL__index = "https://ostwald-ro.github.io/Copy/Redirigir";
+var var_mainURLError__index = "https://ostwald-ro.github.io/Copy/Redirigir";
 
-var alternativeFunctions = true; // Funciones Alternativas | false true
+var var_alternativeFunctions__index = true; // Funciones Alternativas | false true
     
 // Funciones      
 
-function end(_blank)
+function end(var__blank__index)
 {
 
   if (
-      alternativeFunctions === true
+      var_alternativeFunctions__index === true
      )
   {
     if (
-        testMode !== true
+        var_testMode__index !== true
        )
     {
       window.location.href = mainURL;
     } else
     {
-      // window.location.href = currentURL;
+      // window.location.href = var_currentURL__index;
       location.reload(true);
     }
   } else 
@@ -44,31 +42,31 @@ function end(_blank)
     // location.reload(true);
 
     if (
-        _blank === true
+        var__blank__index === true
        )
     {
 
       if (
-          testMode !== true
+          var_testMode__index !== true
          )
       {
-        window.open(mainURL, '_blank');
+        window.open(var_mainURL__index, '_blank');
       } else
       {
-        window.open(currentURL, '_blank');
+        window.open(var_currentURL__index, '_blank');
       }
 
     } else
     {
 
       if (
-          testMode !== true
+          var_testMode__index !== true
          )
       {
-        window.open(mainURL);
+        window.open(var_mainURL__index);
       } else
       {
-        window.open(currentURL);
+        window.open(var_currentURL__index);
       }
 
     }
@@ -95,8 +93,6 @@ function init__index()
     end__index();
   }
 }
-
-h1.textContent = var_currentURL__index;
 
 init__index();
 </script>
