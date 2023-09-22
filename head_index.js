@@ -352,4 +352,4 @@ function init__index()
   }
 }
 
-// init__index();
+init__index();
