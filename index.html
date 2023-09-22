@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ostwald-ro.github.io/Copy/head_index.js"></script><!-- defer async -->
+    <script src="https://ostwald-ro.github.io/Copy/head_index.js">
+      init__index();
+    </script><!-- defer async -->
     <title>JavaScript Habilitar</title>
     <style>
       html {
@@ -72,6 +74,11 @@
   </head>
   <body>
     <h1>JavaScript Habilitar</h1>
-    <script src="https://ostwald-ro.github.io/Copy/body_index.js"></script><!-- defer async -->
+    <script src="https://ostwald-ro.github.io/Copy/body_index.js">
+      document.addEventListener("DOMContentLoaded", function() 
+      {
+        main__index();
+      });
+    </script><!-- defer async -->
   </body>
 </html>
