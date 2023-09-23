@@ -351,5 +351,3 @@ function init__index()
     end__index();
   }
 }
-
-init__index();
