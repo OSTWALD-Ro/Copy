@@ -8,7 +8,7 @@
     <title>JavaScript Habilitar</title>
     <style>
       html {
-        background-color: rgb( 191, 191, 191);
+        background-color: rgb(31, 31, 31); /* background-color: rgb( 191, 191, 191); */
 
         border: ridge rgb(0, 0, 0);
         color: rgb(0, 0, 0);
@@ -34,7 +34,11 @@
       }
     
       html:hover {
-        background-color: rgb( 31, 31, 31); /* background-color: rgb( 191, 191, 191); */
+        background-color: rgb(0, 0, 0); /* background-color: rgb(31, 31, 31); */
+
+        border: double rgb(191, 191, 191);
+        color: rgb(191, 191, 191);
+        box-shadow: 0 0 1.5vh rgb(191, 191, 191);
       }
 
       body {
@@ -62,6 +66,13 @@
         height: calc(100% - 2.8%);
         width: calc(100% - 1.6%);
       }
+
+      body:hover {
+        border: double rgba(0, 0, 0, 0);
+        box-shadow: 0 0 1.5vh rgba(0, 0, 0, 0);
+      }
+
+      /*  //  //  */  /*  //  //  */  /*  //  //  */  /*  //  //  */
 
       h1 {
         font-size: 6vw;
